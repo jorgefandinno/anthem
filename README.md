@@ -35,7 +35,7 @@ These processing steps can be turned off with the options `--no-complete`, `--no
 
 Warnings can be shown by setting the environmental variable ANTHEM_LOG to "war"
 ```sh
-$ ANTHEM_LOG="warn" anthem verify-program examples/example-2.lp examples/example-2.spec examples/example-2.lemmas
+$ ANTHEM_LOG="warn" anthem verify-program examples/example-2.{lp,spec,lemmas}
 ```
 
 ## Building
