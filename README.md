@@ -33,7 +33,7 @@ By default, `anthem` performs Clark’s completion on the translated formulas, d
 
 These processing steps can be turned off with the options `--no-complete`, `--no-simplify`, and `--no-detect-integers`.
 
-Warnings can be shown by setting the environmental variable ANTHEM_LOG to "war"
+Warnings can be shown by setting the environmental variable ANTHEM_LOG to "warn"
 ```sh
 $ ANTHEM_LOG="warn" anthem verify-program examples/example-2.{lp,spec,lemmas}
 ```
