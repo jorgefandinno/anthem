@@ -1,6 +1,3 @@
-#![feature(trait_alias)]
-#![feature(vec_remove_item)]
-
 mod ast;
 pub mod commands;
 pub mod error;

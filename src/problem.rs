@@ -121,8 +121,9 @@ impl Problem
 			{
 				if predicate_declaration.has_positive_dependency_cycle()
 				{
-					return Err(crate::Error::new_program_not_tight(
-						std::rc::Rc::clone(&predicate_declaration)));
+					log::warn!("program not tight (positive recursion involving {})", predicate_declaration.declaration);
+					// return Err(crate::Error::new_program_not_tight(
+					// 	std::rc::Rc::clone(&predicate_declaration)));
 				}
 
 				if predicate_declaration.has_private_dependency_cycle()
